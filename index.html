@@ -41,15 +41,24 @@
 					<source src='assets/video/typing.mp4' type='video/mp4' />
 					<source src='assets/video/typing.webm' type='video/webm' />
 				</video>
+				<!-- might as well place audio here too -->
+				<audio id="pronunciation" preload="auto"> 
+					<source src="assets/audio/pronunciation.mp3">
+					<source src="assets/audio/pronunciation.ogg">
+					<source src="assets/audio/pronunciation.wav">
+				</audio>
 			</div>
 			<div id="overlay"></div>
 			<div id="main">
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Alan Rudolf</h1>
-						<h2>is</h2>
-						<h2 class="wide">suprnurd.</h2>
+						<span onclick="document.getElementById('pronunciation').play()" style="cursor: pointer;">
+							<h1>Alan Rudolf</h1>
+							<h2>is</h2>
+							<h2 class="wide">suprnurd.</h2>
+						</span>
+						<h3>(it's pronounced "<a href="https://www.urbandictionary.com/define.php?term=super%20nerd">super nerd</a>")</h3>
 						<p>Cryptocurrency&nbsp;Enthusiast &nbsp;&bull;&nbsp; 
 							Technical&nbsp;Solutions&nbsp;Provider &nbsp;&bull;&nbsp; 
 							Laser&nbsp;Beam&nbsp;Operator</p>
